@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".BerandaActivity">
+
+    <TextView
+        android:id="@+id/rangkuman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Rangkuman Buku ini"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rangkuman"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/pengeluaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pengeluaran :"
+            android:textColor="#870105"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pengeluaranid"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="angka"
+            android:textColor="#870101"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/pemasukan"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="pemasukan :"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pemasukanid"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="angka"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tambahpemasukan"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/tambahpemasukan" />
+
+
+        <ImageView
+            android:id="@+id/tambahpengeluaran"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="76dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/tambahpengeluaran" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/halaman_siswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:text="Tambah pemasukan"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/halaman_bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:text="tambahkan pengeluaran"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/detailcash"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/detailcashflow" />
+
+
+        <ImageView
+            android:id="@+id/pengaturan"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="70dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/pengaturan" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cashflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:text="Detail CashFlow"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/pengaturan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="serif"
+        android:text="Pengaturan"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
